@@ -7,7 +7,7 @@ import androidx.annotation.Nullable;
 
 public class MyDBHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME="SCHOOL.db";
-    private static final int DATABASE_VERSION=2;
+    private static final int DATABASE_VERSION=1;
     public MyDBHelper( Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -29,6 +29,10 @@ public class MyDBHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("INSERT INTO STUDENT VALUES(null, '2022219003', '황인범', 1, '컴퓨터')");
         sqLiteDatabase.execSQL("INSERT INTO STUDENT VALUES(null, '2022219004', '박지성', 2, '스마트')");
         sqLiteDatabase.execSQL("INSERT INTO STUDENT VALUES(null, '2022219005', '박주영', 2, '컴퓨터')");
+        sqLiteDatabase.execSQL("INSERT INTO STUDENT VALUES(null, '2022219002', '김민재', 3, '컴퓨터')");
+        sqLiteDatabase.execSQL("INSERT INTO STUDENT VALUES(null, '2022219003', '황인범', 2, '스마트')");
+        sqLiteDatabase.execSQL("INSERT INTO STUDENT VALUES(null, '2022219004', '박지성', 3, '전자')");
+        sqLiteDatabase.execSQL("INSERT INTO STUDENT VALUES(null, '2022219005', '박주영', 3, '스마트')");
     }
 
     @Override
