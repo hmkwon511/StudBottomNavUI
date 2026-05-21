@@ -10,13 +10,14 @@ import android.view.ViewGroup;
 
 public class SearchFragment extends Fragment {
 
-    //DB 객체를 저장하기 위한 멤버필드 추가
+    //SQLiteDatabase 객체 저장을 위한 멤버필드 추가
     //DB 검색 결과 저장을 위한 Cursor 멤버 필드 추가
 
     public SearchFragment() {
         // Required empty public constructor
     }
 
+    //SQLiteDataBase를 매개변수로 받는 생성자를 추가하여, 이 DB객체를 멤버 필드에 저장
 
     //필요한 SQL 문
     // 1. 학과 정보로 검색하는 sql문

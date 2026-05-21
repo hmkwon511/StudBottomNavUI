@@ -15,13 +15,13 @@ import android.view.ViewGroup;
  */
 public class StudentFragment extends Fragment {
     /*************************설계*********************************************/
-    //DB 객체 저장을 위한 멤버필드 추가
+    //SQLiteDatabase 객체 저장을 위한 멤버필드 추가
 
      //학생 목록 출력을 위한 ListView 멤버 필드 추가
 
-     //질의 결과 저장을 위한 cursor 멤버필드 추가
+     //질의 결과 저장을 위한 Cursor 멤버필드 추가
 
-     //ListView를 위한 adapter 멤버필드 추가
+     //ListView를 위한 SimpleCursorAdapter 멤버필드 추가
 
      /**************************************************************************/
      // TODO: Rename parameter arguments, choose names that match
@@ -36,6 +36,11 @@ public class StudentFragment extends Fragment {
     public StudentFragment() {
         // Required empty public constructor
     }
+
+    //*********************************************************************************
+    //SQLiteDataBase를 매개변수로 받는 생성자를 추가하여, 이 DB객체를 멤버 필드에 저장
+
+    //*********************************************************************************
 
     /**
      * Use this factory method to create a new instance of
@@ -79,6 +84,9 @@ public class StudentFragment extends Fragment {
         //검색 SQL문을 작성하고 이 검색문을 실행하고 결과를 cursor에 저장
         //cursor를 이용하여 SimpleCursorAdapter를 생성하고 이를 studListView의  adapter로 설정
         //studListView에 컨텍스트 메뉴를 등록 : 삭제/수정 기능 구현 – registerForContextMenu()
-
     }
+
+    //컨텍스트 메뉴를 생성하기 위하여 onCreateContextMenu(...) 메소드 오버라이딩
+
+    //컨텍스트 메뉴를 선택했을 때의 작업을 수행하기 위하여 onContextItemSelected(...) 메소드 오버라이딩
 }

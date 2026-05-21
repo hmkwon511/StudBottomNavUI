@@ -10,11 +10,13 @@ import android.view.ViewGroup;
 
 public class InsertFragment extends Fragment {
 
-    //DB 객체를 저장하기 위한 멤버필드 추가
+    //SQLiteDatabase 객체 저장을 위한 멤버필드 추가
 
     public InsertFragment() {
         // Required empty public constructor
     }
+
+    //SQLiteDataBase를 매개변수로 받는 생성자를 추가하여, 이 DB객체를 멤버 필드에 저장
 
     //학생정보를 DB에 Insert하기 위한 SQL문
     // 1. String sno: 학번 저장
