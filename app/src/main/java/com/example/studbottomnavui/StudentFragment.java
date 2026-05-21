@@ -89,4 +89,6 @@ public class StudentFragment extends Fragment {
     //컨텍스트 메뉴를 생성하기 위하여 onCreateContextMenu(...) 메소드 오버라이딩
 
     //컨텍스트 메뉴를 선택했을 때의 작업을 수행하기 위하여 onContextItemSelected(...) 메소드 오버라이딩
+    // delete : String sqlStatement = "DELETE FROM STUDENT WHERE _id = " + ???
+    // eidt : 미 구현 -- 추후 확장
 }
